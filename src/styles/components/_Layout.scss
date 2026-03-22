@@ -1,0 +1,15 @@
+@use "../variables";
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: variables.$primary-font;
+}
+main {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 70ch;
+    border: 1px variables.$primary-color solid;
+}

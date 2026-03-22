@@ -1,0 +1,28 @@
+---
+---
+
+<nav class="nav">
+  <div class="container">
+    <div class="logo-container">
+        <a href="/" class="logo">MySite</a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <div class="links">
+      <a href="/about/">About</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelector('.links');
+
+  toggle?.addEventListener('click', () => {
+    links?.classList.toggle('active');
+  });
+</script>
